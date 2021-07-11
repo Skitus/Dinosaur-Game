@@ -1,0 +1,160 @@
+body {
+		background-color: black;
+}
+.gamePlace {
+	width: 640px;
+	height: 300px;
+	border: 1px solid black;
+	position: relative;
+	margin: 50px auto;
+	background-color: red;
+	background: url('2ef5ee85723c0189d565316f95989c241e8ec9e6r1-1000-563_hq.gif');
+	box-shadow: 10px 0px 0px white ,-10px -0px 0px white, 0px 10px 0px white ,0px -10px 0px white ;
+}
+.dinosaur {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+}
+.jumpdDin {
+	animation: jump  linear 400ms;
+}
+@keyframes jump {
+	0%{top:160px;}
+	15%{top: 130px;}
+	30%{top:100px;}
+	70%{top:100px;}
+	90%{top: 180px;}
+	95%{top: 200px;}
+	100%{top:225px;}
+}
+.problem {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	left: 600px;
+	animation: block linear infinite;
+	animation-duration: 1s;
+}
+@keyframes block {
+	0%{left: 540px;}
+	100%{ left: -30px; }
+}
+.coin {
+	width: 20px;
+	height: 20px;
+	background: url("coin-shine1.gif");
+	background-size: 35px 35px;
+	background-position: center center;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	left: 540px;
+	animation: bl linear;
+	animation-duration: 0.85s;
+	bottom: 120px;
+}
+.imgCoin {
+	width: 20px;
+	height: 20px;
+	object-position: center;
+	object-fit: cover;
+	display: inline-block;
+}
+@keyframes bl {
+	0%{left: 540px;}
+	100%{ left: -100px; }
+}
+.score ,.scoreCoins{
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	padding: 0px 15px;
+}
+.Records {
+	margin: 0px auto;
+	width: 640px;
+}
+
+.flex p:nth-child(even) {
+	box-shadow: 10px 0px 0px #DC0FEC ,-10px -0px 0px #DC0FEC, 0px 10px 0px #DC0FEC ,0px -10px 0px #DC0FEC ;
+			color: white;
+	font-family: 'Press Start 2P', cursive;
+
+	padding: 15px 15px; 
+	margin: 40px 0px;
+}
+.flex p:nth-child(odd) {
+
+	box-shadow: 10px 0px 0px  #4FCCFC ,-10px -0px 0px  #4FCCFC, 0px 10px 0px  #4FCCFC ,0px -10px 0px  #4FCCFC ;
+			color: white;
+	font-family: 'Press Start 2P', cursive;
+
+	padding: 15px 15px; 
+	margin: 40px 0px;
+}
+.show {
+	width: 100%;
+	height: 60px;
+	background-color: #2EFF9C;
+	outline: none;
+	border: none;
+	color: #6B6B6B;
+	font-family: 'Press Start 2P', cursive;
+}
+.show.res {
+	width: 100%;
+	height: 60px;
+	background-color: red;
+	outline: none;
+	border: none;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+}
+.afterSafeCoins ,  .here {
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	margin: 0px 0px;
+}
+.shop {
+	width: 23%;
+	box-shadow: 10px 0px 0px white ,-10px -0px 0px white, 0px 10px 0px white ,0px -10px 0px white ;
+	position: fixed;
+	top: 80px;
+	left: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.cages, .changeCage {
+	width: 100px;
+	height: 100px;
+	padding: 10px 10px;
+}
+.Photo_Cages {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.cost {
+	color: white;
+	font-size: 10px;
+	font-family: 'Press Start 2P', cursive;
+	margin : 0px 0px;
+	padding: 0px 0px;
+}
+.backet {
+	width: 23%;
+	box-shadow: 10px 0px 0px white ,-10px -0px 0px white, 0px 10px 0px white ,0px -10px 0px white ;
+	position: fixed;
+	top: 80px;
+	right:  10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
